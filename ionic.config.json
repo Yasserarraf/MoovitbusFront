@@ -1,0 +1,7 @@
+{
+  "name": "MoovitBus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
