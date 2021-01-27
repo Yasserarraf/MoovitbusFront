@@ -2,7 +2,7 @@
 Ceci est la partie front du projet MoovitBus  
 # Répartition des tâches :  
 **Ayoub** : Page = tab1:Acheter ticket => alimenter la page par json  
-**Ali** : dévellopement de l'application IONIC  
+**Ali** : dévelopement de l'application IONIC  
 **Hassan** : crée la page Login et  request post  
 **Imane** : crée la page inscription et  request post  
 **Marouan** : crée la page S'inscrire dans un abonnement et traiter les requetes GET/POST  
