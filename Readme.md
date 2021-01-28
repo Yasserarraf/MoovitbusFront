@@ -12,12 +12,12 @@ Ceci est la partie front du projet MoovitBus
 # Structure du code et acheminement des tâches :  
 ### Acheter un ticket  
 <img src="screenshots/Acheter-ticket.png" width="300">
-**Explication** cette partie, dont se chargera **Ayoub**, est régie par le component tab1  
+Cette partie, dont se chargera Ayoub, est régie par le component tab1 dans src    
 
 ### Suivre un bus  
 <img src="screenshots/Suivre-un-Bus.png" width="300">
-**Explication** cette partie, dont se chargera **Yasser**, est régie par le component tab2  
+Cette partie, dont se chargera Yasser, est régie par le component tab2 dans src  
 
 ### Payement d'abonnement  
 <img src="screenshots/Payer-un-abonnement.png" width="300">
-**Explication** cette partie, dont se chargera **Siham**, est régie par le component tab3  
+Cette partie, dont se chargera Siham, est régie par le component tab3 dans src  
