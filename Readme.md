@@ -11,4 +11,4 @@ Ceci est la partie front du projet MoovitBus
 
 # Structure du code et acheminement des tâches :  
 ### Acheter un ticket  
-<img src="screenshots/Acheter-ticket.png">
+<img src="screenshots/Acheter-ticket.png" width="100">
