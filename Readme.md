@@ -8,3 +8,7 @@ Ceci est la partie front du projet MoovitBus
 **Marouan** : crée la page S'inscrire dans un abonnement et traiter les requetes GET/POST  
 **Siham** : Page = tab3:payement d'abonnement => alimenter la page par json.  
 **Yasser** : Page = tab2:Suivre un bus => alimenter la page par json.  
+
+# Structure du code et acheminement des tâches :  
+### Acheter un ticket  
+<img src="screenshots/Acheter-ticket.png">
