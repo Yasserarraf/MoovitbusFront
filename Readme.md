@@ -7,6 +7,7 @@ Il faut tout d'abord installer :
 - **IONIC** Dans votre console faire la commande suivante : npm install -g @ionic/cli  
 - **Telecharger git** Il faut telecharger git, voici un lien pour le faire : https://git-scm.com/downloads
 - **Importer le projet depuis Github** Dans votre console faire la commande suivante : git clone https://github.com/aliBarakate/MoovitbusFront.git  
+- **Démarrer l'application sur votre machine** Pour le faire, sur votre console rendez-vous à la racine du projet et faite la commande suivante : ionic serve
 ## Dossier Google Drive qui contient la structure de tout les fichiers JSON  
 - Vous trouverez sur ce lien la structure de tout les fichiers JSON https://drive.google.com/drive/folders/1ExgHcXTY5Bfh3uLgqS2dQ1Npj9kHHXMA?usp=sharing
 # Répartition des tâches :  
