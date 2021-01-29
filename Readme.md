@@ -1,5 +1,11 @@
 # Introduction
 Ceci est la partie front du projet MoovitBus  
+### Prérequis et installation :
+Il faut tout d'abord installer :  
+**node.js** https://nodejs.org/en/download/  
+**angular** Dans votre console faire la commande suivante : npm install -g @angular/cli  
+**IONIC** Dans votre console faire la commande suivante : npm install -g @ionic/cli  
+**Importer le projet depuis Github** Dans votre console faire la commande suivante : git clone https://github.com/aliBarakate/MoovitbusFront.git  
 # Répartition des tâches :  
 **Ayoub** : Page = tab1:Acheter ticket => alimenter la page par json  
 **Ali** : dévelopement de l'application IONIC  
