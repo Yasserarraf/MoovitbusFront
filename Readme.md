@@ -12,7 +12,7 @@ Il faut tout d'abord installer :
 - Vous trouverez sur ce lien la structure de tout les fichiers JSON https://drive.google.com/drive/folders/1ExgHcXTY5Bfh3uLgqS2dQ1Npj9kHHXMA?usp=sharing
 # Répartition des tâches :  
 - **Ayoub** : Page = tab1:Acheter ticket => alimenter la page par json  
-- **Ali** : dévelopement de l'application IONIC  
+- **Ali** : Dévelopement de l'application IONIC  
 - **Hassan** : crée la page Login et  request post  
 - **Imane** : crée la page inscription et  request post  
 - **Marouan** : crée la page S'inscrire dans un abonnement et traiter les requetes GET/POST  
