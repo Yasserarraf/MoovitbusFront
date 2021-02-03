@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="height: 8%;"></div>
+  <ion-item>
+    <ion-icon name="email-outline"></ion-icon>
+    <ion-label >E-mail</ion-label>
+    <ion-input placeholder="Entrer votre adresse mail"></ion-input>
+  </ion-item>
+  <ion-item >
+    <ion-icon name="password-outline"></ion-icon>
+    <ion-label >Password</ion-label>
+      <ion-input  type="Password" placeholder="Entrer votre mot de passe"></ion-input>  
+  </ion-item>
+  <ion-button expand="block" (click)="callPostService(email,password)" >Se connecter</ion-button>
+  <ion-text class='ion-text-center' color='medium' ><p> Vous n'avez pas un compte?</p></ion-text>
+  <ion-button expand="block" color='secondary'>S'inscrire</ion-button>
+
+
+</ion-content>
