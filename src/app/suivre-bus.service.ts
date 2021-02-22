@@ -6,18 +6,17 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SuivreBusService {
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient) {}
 
-
-   }
-   id : number;
-   longitude:number;
-   direction:"";
-   temps_Restant:number;
-   latitude:number;
-   configUrl = 'assets/config.json';
-
-   getConfig() {
-    return this.http.get(this.configUrl);
+  public getAllstations(){
+    return this.http.get("assets/stations.json");
   }
+
+  public getAllLignes(){
+    return this.http.get("assets/lignes.json");
+  }
+  public getAllBusLocations(){
+    return this.http.get("assets/busLocations.json");
+  }
+
 }

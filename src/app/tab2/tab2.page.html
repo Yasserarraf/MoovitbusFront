@@ -7,22 +7,43 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div style="height: 10%;"></div>
+
 
   <ion-item>
-    <ion-icon name="subway-outline"></ion-icon>
     <ion-label>Ligne</ion-label>
-    <ion-input></ion-input>
+    <ion-select *ngIf="lignes" placeholder="Ligne du bus" [ngModel]="selectedLigne">
+      <ion-select-option *ngFor="let ligne of lignes" value="{{ligne.nom}}">{{ligne.nom}}</ion-select-option>
+    </ion-select>
   </ion-item>
-  
-    <ion-item>
-      <ion-icon name="flag-outline"></ion-icon>
-      <ion-label>Station actuelle</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="golf-outline"></ion-icon>
-      <ion-label>Station d'arriver :</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
+
+  <ion-item>
+    <ion-label>Station Actuelle</ion-label>
+    <ion-select *ngIf="stations" placeholder="Station Actuelle" [(ngModel)]="selectedStationAct"  >
+      <ion-select-option *ngFor="let station of stations" value="{{station.nom}}">{{station.nom}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Station Destination</ion-label>
+    <ion-select *ngIf="stations" placeholder="Station Destination" [(ngModel)]="selectedStationDest" >
+      <ion-select-option *ngFor="let station of stations" value="{{station.nom}}">{{station.nom}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-button  color="primary" style="margin-top:5px;margin-bottom: 5px" (click)="locateSelectedValue()" >Suivre les bus</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-center">
+      <ion-col size="12" class="ion-text-center">
+        <div id="mapId" style="width:100%;height:505px"></div>
+      </ion-col>
+    </ion-row>
+
+
+  </ion-grid>
+
+
+
 </ion-content>
