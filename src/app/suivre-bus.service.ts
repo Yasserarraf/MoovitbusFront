@@ -2,9 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class SuivreBusService {
+
 
   constructor(private http: HttpClient) {}
 
@@ -18,5 +19,8 @@ export class SuivreBusService {
   public getAllBusLocations(){
     return this.http.get("assets/busLocations.json");
   }
+
+
+
 
 }

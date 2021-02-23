@@ -37,6 +37,7 @@ export class Tab2Page implements OnInit {
         },err=>{
           console.log(err);
         });
+
       this.suivreBusService.getAllLignes()
           .subscribe(data=>{
               this.lignes=data;
@@ -127,6 +128,12 @@ export class Tab2Page implements OnInit {
         }).addTo(this.map);
 
     }
+
+
+
+
+
+
 
 
 }
