@@ -9,6 +9,10 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
+
+    
+
+      
       "schematics": {},
       "architect": {
         "build": {
@@ -174,6 +178,7 @@
     }
   },
   "cli": {
+    "analytics": "16e32d43-ebc4-4d2e-8c7d-ab469a0211c9",
     "defaultCollection": "@ionic/angular-toolkit"
   },
   "schematics": {
