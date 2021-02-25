@@ -12,7 +12,7 @@ export class SuivreBusService {
   public host:string = "http://localhost:8080"
 
   public getAllstations(){
-    let url = this.host + '/stations'
+    let url = this.host + '/station/All'
     return this.http.get("assets/stations.json");
     //return this.http.get(url);
   }
