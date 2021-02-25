@@ -1,4 +1,4 @@
-import { Tab4Page } from './tab4.page';
+import { Tab5Page } from './tab5.page';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { Tab4PageRoutingModule } from './tab4-routing.module';
+import { Tab5PageRoutingModule } from './tab5-routing.module';
 
 @NgModule({
   imports: [
@@ -15,8 +15,8 @@ import { Tab4PageRoutingModule } from './tab4-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab4PageRoutingModule
+    Tab5PageRoutingModule
   ],
-  declarations: [Tab4Page]
+  declarations: [Tab5Page]
 })
-export class Tab4PageModule {}
+export class Tab5PageModule {}

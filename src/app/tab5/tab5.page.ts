@@ -1,16 +1,16 @@
 import { Lignes } from './Ligne';
 import { InformationInscription } from './InformationInscription';
-import { AbonnementInscriptionService } from './../abonnement-inscription.service';
+import { AbonnementInscriptionService } from '../abonnement-inscription.service';
 import { Abonnement } from './Abonnement';
 import { Component, OnInit } from '@angular/core';
 import {AlertController} from '@ionic/angular';
 
 @Component({
-  selector: 'app-tab4',
-  templateUrl: 'tab4.page.html',
-  styleUrls: ['tab4.page.scss']
+  selector: 'app-tab5',
+  templateUrl: 'tab5.page.html',
+  styleUrls: ['tab5.page.scss']
 })
-export class Tab4Page {
+export class Tab5Page {
   abonnements: Abonnement[] = [];
   lignes: Lignes[] = [];
   selectedValues : string[]=[];

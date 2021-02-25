@@ -1,7 +1,7 @@
-import { Lignes } from './tab4/Ligne';
-import { InformationInscription } from './tab4/InformationInscription';
+import { Lignes } from './tab5/Ligne';
+import { InformationInscription } from './tab5/InformationInscription';
 import { HttpClient } from '@angular/common/http';
-import { Abonnement } from './tab4/Abonnement';
+import { Abonnement } from './tab5/Abonnement';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
