@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content >
+<ion-content  style="background-color: whitesmoke">
   <form #f="ngForm" method="post" (ngSubmit)="onSubmit(f.value)">
     <ion-item lines="full">
       <ion-label position="floating">Nom</ion-label>
@@ -32,7 +32,7 @@
       <ion-input type="password" required ngModel name="password" ></ion-input>
     </ion-item>
 
-    <ion-row>
+    <ion-row class="ion-align-items-center">
       <ion-col>
         <ion-button type="submit" color="primary"  >Sign Up</ion-button>
       </ion-col>
