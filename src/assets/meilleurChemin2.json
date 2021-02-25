@@ -1,0 +1,37 @@
+[
+  {
+    "id": 5,
+    "nom": "10",
+    "stationDepart": {
+      "id": 28,
+      "nom": "Hawmat Chouk",
+      "longitude": 564676,
+      "latitude": 65767
+    },
+    "stationDest": {
+      "id": 7,
+      "nom": "Mosquee Badr",
+      "longitude": 6576567,
+      "latitude": 7587587
+    },
+    "nmbreligne": 2
+  },
+  {
+    "id": 1,
+    "nom": "2",
+    "stationDepart": {
+      "id": 7,
+      "nom": "Mosquee Badr",
+      "longitude": 564676,
+      "latitude": 65767
+    },
+    "stationDest": {
+      "id": 2,
+      "nom": "Msnana",
+      "longitude": 6576567,
+      "latitude": 7587587
+    },
+    "nmbreligne": 2
+  }
+
+]

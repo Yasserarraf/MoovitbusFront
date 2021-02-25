@@ -26,5 +26,27 @@
     "x_station": 35.7356,
     "y_station": -5.89079,
     "direction": "aller"
+  },
+  {
+    "id": 28,
+    "nom": "Hawmat Chouk",
+    "x_station": 35.7356,
+    "y_station": -5.89079,
+    "direction": "aller"
+  },
+  {
+    "id": 7,
+    "nom": "Mosquee Badr",
+    "x_station": 35.7356,
+    "y_station": -5.89079,
+    "direction": "aller"
+  },
+  {
+    "id": 7,
+    "nom": "Bni Makada",
+    "x_station": 35.7356,
+    "y_station": -5.89079,
+    "direction": "aller"
   }
+
 ]

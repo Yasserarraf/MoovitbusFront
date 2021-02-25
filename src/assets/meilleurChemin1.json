@@ -1,0 +1,19 @@
+[
+  {
+    "id": 4,
+    "nom": "1B",
+    "stationDepart": {
+      "id": 19,
+      "nom": "Bni Makada",
+      "longitude": 564676,
+      "latitude": 65767
+    },
+    "stationDest": {
+      "id": 1,
+      "nom": "Cite Universitaire",
+      "longitude": 6576567,
+      "latitude": 7587587
+    },
+    "nmbreligne": 1
+  }
+]

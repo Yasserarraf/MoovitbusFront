@@ -65,26 +65,22 @@ export class Tab2Page implements OnInit {
     }
     //get lat lng of selected value from stations.json
     getlatlgStations(stationAct,stationDes){
-
-
       this.stations.forEach((val:any)=>{
-
-
         if(stationAct === val.nom){
             this.sA = {"lat":val.x_station,"lng":val.y_station};
         }else if(stationDes === val.nom)
             this.sD = {"lat":val.x_station,"lng":val.y_station};
       });
     }
-  //locate the selected value in the map
+
+
+    //locate the selected value in the map
     locateSelectedValue(){
       //locate bus positions
         if(this.busLocationsmarkers.length > 0){
-
             console.log(this.busLocationsmarkers);
             this.busLocationsmarkers.forEach(val=>{
                 this.map.removeLayer(val);
-
             });
             this.busLocationsmarkers = [];
         }
@@ -95,11 +91,8 @@ export class Tab2Page implements OnInit {
                 .setContent(val.temps_Restant+" min");
             Marker.addTo(this.map);
             Marker.bindPopup(popup).openPopup();
-
-
             this.busLocationsmarkers.push(Marker);
         });
-
 
 
       //locate selected values
@@ -128,12 +121,4 @@ export class Tab2Page implements OnInit {
         }).addTo(this.map);
 
     }
-
-
-
-
-
-
-
-
 }

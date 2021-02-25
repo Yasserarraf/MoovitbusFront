@@ -20,7 +20,12 @@ export class SuivreBusService {
     return this.http.get("assets/busLocations.json");
   }
 
+  public getMeilleurVoyage(){
+    return this.http.get("assets/meilleurChemin1.json");
+  }
 
 
-
+  postRessource(url: any, data: any) {
+    return this.http.get(url);
+  }
 }
