@@ -42,6 +42,7 @@ export class Tab5Page {
   }
 
   saveAbonnement(){
+  this.informationInscription= JSON.parse(localStorage.getItem('client_id'));
   this.abonnementInscriptionService.saveAbonnement(this.informationInscription).subscribe(
     data=>{
     console.log("successful") 
