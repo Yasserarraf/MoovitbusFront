@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+     S'inscrire à Un Abonnement</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div style="height: 8%;"></div>
+  <ion-item> 
+    <ion-label>Choix d'Abonnement</ion-label>  
+    <ion-select placeholder="Selectionner Abonnement" style="max-width: 100%;"  *ngIf="abonnements" [(ngModel)]="selectedAbonVal">
+      <ion-select-option *ngFor="let abonnement of abonnements" value="{{abonnement.id}}">
+        {{abonnement.type}} à {{abonnement.prix}} DH </ion-select-option>  
+    </ion-select>  
+  </ion-item>  
+  <div style="height: 8%;"></div>
+  <ion-item> 
+    <ion-label>Choix des Lignes</ion-label>  
+    <ion-select  placeholder="Selectionner la Ligne"
+    multiple = "true" style="max-width: 100%;"*ngIf="lignes"[(ngModel)]="selectedLigneVal" >
+      <ion-select-option *ngFor="let ligne of lignes"value="{{ligne.id}}" >
+        {{ligne.nom}} </ion-select-option>  
+    </ion-select>  
+  </ion-item>  
+
+  <ion-button expand="block" (click)="saveAbonnement()">Valider</ion-button>
+</ion-content>

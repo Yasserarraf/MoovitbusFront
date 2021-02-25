@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'inscription',
         loadChildren: () => import('../inscription/inscription.module').then( m => m.InscriptionPageModule)
+      },
+        {
+        path: 'tab5',
+        loadChildren: () => import('../tab5/tab5.module').then(m => m.Tab5PageModule)
       },
       {
         path: '',
