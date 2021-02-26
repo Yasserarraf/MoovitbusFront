@@ -1,0 +1,59 @@
+ <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Payer un abonnement
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="height: 8%;"></div>
+  
+    <ion-item>
+      <ion-label>Type d'abonnement:</ion-label>
+      <ion-select *ngIf="abonnements" placeholder="Type d'abonnement" [ngModel]="selectedAbonnement">
+        <ion-select-option *ngFor="let abonnement of abonnements" value="{{abonnement.type}}">
+          {{abonnement.type}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Ligne  :</ion-label>
+      <ion-select *ngIf="lignes" placeholder="Ligne du bus" [ngModel]="selectedLigne">
+        <ion-select-option *ngFor="let ligne of lignes" value="{{ligne.nom}}">{{ligne.nom}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Nom du porteur  :</ion-label>
+      <ion-input type="text"  [(ngModel)]="user.nom_porteur"  ></ion-input>
+      
+    </ion-item>
+  
+   <ion-item>
+      <ion-label>Numéro du paiement:</ion-label>
+      <ion-input type="text"  [(ngModel)]="user.numPaiment" ></ion-input>
+      
+     </ion-item>
+
+     <ion-item>
+      <ion-label>Mois d'Expiration:</ion-label>
+      <ion-input type="text"  [(ngModel)]="user.moisExpiration"  ></ion-input>    
+     </ion-item>
+
+     <ion-item>
+      <ion-label>Annee d'Expiration:</ion-label>
+      <ion-input type="text"  [(ngModel)]="user.anneeExpiration"  ></ion-input>
+     </ion-item>
+
+     <ion-item>
+      <ion-label>Code de Verification:</ion-label>
+      <ion-input type="text"  [(ngModel)]="user.codeVerification"   ></ion-input>   
+     </ion-item>
+
+  
+   
+  
+    <ion-button expand="block" (click)="postData()" >Confirmer </ion-button>
+    <ion-text><h1>{{status}}</h1></ion-text>
+</ion-content>

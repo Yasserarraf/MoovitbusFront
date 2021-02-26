@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nom": "Gare Ferrovaire",
+    "x_station": 35.7718,
+    "y_station": -5.78625,
+    "direction": "aller"
+  },
+  {
+    "id": 3,
+    "nom": "Hopital Mohammed V",
+    "x_station": 35.7514,
+    "y_station": -5.82842,
+    "direction": "aller"
+  },
+  {
+    "id": 5,
+    "nom": "Msnana",
+    "x_station": 35.7537,
+    "y_station": -5.85859,
+    "direction": "aller"
+  },
+  {
+    "id": 7,
+    "nom": "Cite Universitaire",
+    "x_station": 35.7356,
+    "y_station": -5.89079,
+    "direction": "aller"
+  }
+]

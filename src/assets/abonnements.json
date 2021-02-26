@@ -1,0 +1,13 @@
+[ 
+    { 
+        "id": 1,
+        "type": "une seule ligne",
+        "prix": 75.0 
+    },
+
+    { 
+        "id": 2,
+        "type": "plusieurs lignes", 
+        "prix": 100.0 
+    }
+]
