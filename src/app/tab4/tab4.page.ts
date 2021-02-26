@@ -29,15 +29,16 @@ export class Tab4Page implements OnInit {
   }
 
   submitForm(data) {
-      //let url = this.suivreBusService.host + '/meilleurVoyage';
-      let url;
-      if(data.station_Dep === "Bni Makada"&& data.station_Dist === "Cite Universitaire" ) {
-        url = "assets/meilleurChemin1.json";
-      }else if(data.station_Dep === "Hawmat Chouk"&& data.station_Dist === "Msnana"){
-        url = "assets/meilleurChemin2.json";
-      }
+      let url = this.suivreBusService.host + '/meilleurVoyage?station_Dep='+this.station_Dep+"&station_Dist="+this.station_Dist;
 
-      this.suivreBusService.postRessource(url,data)
+      // let url;
+      // if(data.station_Dep === "Bni Makada"&& data.station_Dist === "Cite Universitaire" ) {
+      //   url = "assets/meilleurChemin1.json";
+      // }else if(data.station_Dep === "Hawmat Chouk"&& data.station_Dist === "Msnana"){
+      //   url = "assets/meilleurChemin2.json";
+      // }
+
+      this.suivreBusService.postRessource(url)
           .subscribe(data=>{
             this.result= data;
             console.log(this.result.length);

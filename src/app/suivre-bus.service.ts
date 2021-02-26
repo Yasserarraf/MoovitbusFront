@@ -9,23 +9,27 @@ export class SuivreBusService {
 
   constructor(private http: HttpClient) {}
 
+  public host:string = "http://localhost:8080"
+
   public getAllstations(){
+    //let url = this.host + '/station/All'
     return this.http.get("assets/stations.json");
+    //return this.http.get(url);
   }
 
   public getAllLignes(){
-    return this.http.get("assets/lignes.json");
+    let url = this.host + '/lignes'
+    //return this.http.get("assets/lignes.json");
+    return this.http.get(url);
   }
-  public getAllBusLocations(){
-    return this.http.get("assets/busLocations.json");
+  public getAllBusLocations(url){
+    //return this.http.get("assets/busLocations.json");
+    return this.http.get(url);
   }
 
-  public getMeilleurVoyage(){
-    return this.http.get("assets/meilleurChemin1.json");
-  }
+  postRessource(url: any, ) {
+    //return this.http.get(url);
 
-
-  postRessource(url: any, data: any) {
     return this.http.get(url);
   }
 }

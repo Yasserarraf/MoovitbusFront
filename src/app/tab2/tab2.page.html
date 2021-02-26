@@ -9,32 +9,35 @@
 <ion-content [fullscreen]="true">
 
 
-  <ion-item>
-    <ion-label>Ligne</ion-label>
-    <ion-select *ngIf="lignes" placeholder="Ligne du bus" [ngModel]="selectedLigne">
-      <ion-select-option *ngFor="let ligne of lignes" value="{{ligne.nom}}">{{ligne.nom}}</ion-select-option>
-    </ion-select>
-  </ion-item>
+  <form  #f="ngForm" (ngSubmit)="locateSelectedValue(f.value)">
+
 
   <ion-item>
     <ion-label>Station Actuelle</ion-label>
-    <ion-select *ngIf="stations" placeholder="Station Actuelle" [(ngModel)]="selectedStationAct"  >
+    <ion-select *ngIf="stations" placeholder="Station Actuelle" [(ngModel)]="selectedStationAct" name="station_Dep" >
       <ion-select-option *ngFor="let station of stations" value="{{station.nom}}">{{station.nom}}</ion-select-option>
     </ion-select>
   </ion-item>
   <ion-item>
     <ion-label>Station Destination</ion-label>
-    <ion-select *ngIf="stations" placeholder="Station Destination" [(ngModel)]="selectedStationDest" >
+    <ion-select *ngIf="stations" placeholder="Station Destination" [(ngModel)]="selectedStationDest" name="station_Dist">
       <ion-select-option *ngFor="let station of stations" value="{{station.nom}}">{{station.nom}}</ion-select-option>
     </ion-select>
   </ion-item>
-
-  <ion-grid>
+    <ion-item>
+      <ion-label>Ligne</ion-label>
+      <ion-select *ngIf="lignes" placeholder="Ligne du bus" [ngModel]="selectedLigne" name="nom_LigneBus" >
+        <ion-select-option *ngFor="let ligne of lignes" value="{{ligne.nom}}">{{ligne.nom}}</ion-select-option>
+      </ion-select>
+    </ion-item>
     <ion-row class="ion-align-items-center">
       <ion-col size="12" class="ion-text-center">
-        <ion-button  color="primary" style="margin-top:5px;margin-bottom: 5px" (click)="locateSelectedValue()" >Suivre les bus</ion-button>
+        <ion-button  color="primary" style="margin-top:5px;margin-bottom: 5px" type="submit" >Suivre les bus</ion-button>
       </ion-col>
     </ion-row>
+    </form>
+  <ion-grid>
+
     <ion-row class="ion-align-items-center">
       <ion-col size="12" class="ion-text-center">
         <div id="mapId" style="width:100%;height:505px"></div>
