@@ -24,7 +24,6 @@ export class Tab5Page {
   ngOnInit(): void {
     this.getAbonnement();
     this.getLigne();
-
   }
 
 

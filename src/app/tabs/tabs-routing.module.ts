@@ -21,6 +21,10 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'maFacture',
+        loadChildren: () => import('../facture/facture.module').then( m => m.FacturePageModule)
+      },
+      {
         path:'tab4',
         loadChildren: () => import('../tab4/tab4.module').then(m => m.Tab4PageModule)
       },
@@ -32,6 +36,15 @@ const routes: Routes = [
         path: 'tab5',
         loadChildren: () => import('../tab5/tab5.module').then(m => m.Tab5PageModule)
       },
+      {
+        path:'achatTicketParSolde',
+        loadChildren: () => import('../achat-ticket-par-solde/achat-ticket-par-solde.module').then( m => m.AchatTicketParSoldePageModule)
+      },
+      {
+        path: 'achatTicketParCarte',
+        loadChildren: () => import('../achat-ticket-par-carte/achat-ticket-par-carte.module').then( m => m.AchatTicketParCartePageModule)
+      }
+      ,
       {
         path: '',
         redirectTo: '/tabs/tab1',
