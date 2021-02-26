@@ -79,8 +79,8 @@ export class Tab2Page implements OnInit {
     //locate the selected value in the map
     locateSelectedValue(data){
       console.log(data);
-      let url = this.suivreBusService.host + '/Postempsrestantbus'
-        this.suivreBusService.getAllBusLocations(url,data)
+      let url = this.suivreBusService.host + '/Postempsrestantbus?station_Dep='+data.station_Dep+"&station_Dist="+data.station_Dist+'&nom_LigneBus='+data.nom_LigneBus;
+        this.suivreBusService.getAllBusLocations(url)
             .subscribe(data=>{
                 this.busLocations=data;
                 this.isLocated = true

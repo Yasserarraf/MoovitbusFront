@@ -12,23 +12,24 @@ export class SuivreBusService {
   public host:string = "http://localhost:8080"
 
   public getAllstations(){
-    let url = this.host + '/station/All'
+    //let url = this.host + '/station/All'
     return this.http.get("assets/stations.json");
     //return this.http.get(url);
   }
 
   public getAllLignes(){
     let url = this.host + '/lignes'
-    return this.http.get("assets/lignes.json");
-    //return this.http.get(url);
+    //return this.http.get("assets/lignes.json");
+    return this.http.get(url);
   }
-  public getAllBusLocations(url,data){
-    return this.http.get("assets/busLocations.json");
-    //return this.http.post(url,data);
+  public getAllBusLocations(url){
+    //return this.http.get("assets/busLocations.json");
+    return this.http.get(url);
   }
 
-  postRessource(url: any, data: any) {
+  postRessource(url: any, ) {
+    //return this.http.get(url);
+
     return this.http.get(url);
-    //return this.http.post(url,data);
   }
 }
