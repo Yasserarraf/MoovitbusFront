@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+
+    <ion-title class="ion-text-center">
+
+      Liste des factures
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+  <div style="height: 10%;"></div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+       ID
+      </ion-col>
+      <ion-col>
+        Code Abonné
+      </ion-col>
+      <ion-col>
+        Status
+      </ion-col>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let f of facture">
+      <ion-col>
+        {{f.id}}
+      </ion-col>
+      <ion-col>
+        {{f.codeAbonne}}
+      </ion-col>
+      <ion-col *ngIf="f.payee==0">
+        Non payee
+      </ion-col>
+      <ion-col *ngIf="f.payee==1">Payee
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" (click)="submit(f.codeAbonne)">Payer </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

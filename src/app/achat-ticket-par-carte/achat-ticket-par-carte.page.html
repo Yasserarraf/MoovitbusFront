@@ -1,0 +1,82 @@
+<div *ngIf="this.validAchatCarte==0">
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+
+    <ion-title class="ion-text-center">
+      Paiement par carte
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Paiement par carte</ion-title>
+    </ion-toolbar>
+
+  </ion-header>
+  <div style="height: 10%;"></div>
+
+
+  <br><br><br>
+  <ion-item lines="full">
+    <ion-label position="floating">Nom porteur de la carte :</ion-label>
+    <ion-input type="text" required ngModel name="nom" [(ngModel)]="nom"></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating"> Numéro de paiement:</ion-label>
+    <ion-input type="text" required ngModel name="num" [(ngModel)]="num"></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating"> Mois d'expiration :</ion-label>
+    <ion-input type="text" required ngModel name="mois" [(ngModel)]="mois"></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating"> Année d'expiration :</ion-label>
+    <ion-input type="text" required ngModel name="annee" [(ngModel)]="annee"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating"> Code vérification :</ion-label>
+    <ion-input type="text" required ngModel name="code" [(ngModel)]="code"></ion-input>
+  </ion-item>
+  <br><br>
+  <ion-button expand="block" (click)=" AchatParCarte()">Valider</ion-button>
+
+</ion-content>
+</div>
+<div *ngIf="validAchatCarte==1">
+  <ion-header [translucent]="true">
+
+    <ion-toolbar>
+
+      <ion-title class="ion-text-center">
+        Paiement par solde
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Paiement par carte bancaire</ion-title>
+      </ion-toolbar>
+
+    </ion-header>
+    <div style="height: 10%;"></div>
+
+
+    <br><br><br>
+    <ion-item lines="full">
+      <ion-label position="floating">Code Confirmation d'achat :</ion-label>
+      <ion-input type="text" required ngModel name="num_tel" [(ngModel)]="codeConfirmation"></ion-input>
+    </ion-item>
+    <br><br>
+    <br>
+    <ion-button expand="block" (click)="confirmationAchatParCarte()">Valider</ion-button>
+    <br><br>
+    <p style="color:white; font-size:12px;">Vérifiez votre mail s'il vous plait!</p>
+
+  </ion-content>
+</div>
+
