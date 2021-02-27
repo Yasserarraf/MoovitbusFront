@@ -83,6 +83,7 @@ export class Tab2Page implements OnInit {
         this.suivreBusService.getAllBusLocations(url)
             .subscribe(data=>{
                 this.busLocations=data;
+                console.log(this.busLocations);
                 this.isLocated = true
                 //locate bus positions
                 if(this.busLocationsmarkers.length > 0){
@@ -104,29 +105,29 @@ export class Tab2Page implements OnInit {
 
 
                 //locate selected values
-                this.getlatlgStations(this.selectedStationAct,this.selectedStationDest);
-                if(this.routeControl){
-                    console.log("it works");
-                    this.map.removeControl(this.routeControl);
-                }
-                this.routeControl =  Leaflet.Routing.control({
-
-                    router: Leaflet.Routing.osrmv1({
-                        serviceUrl: `http://router.project-osrm.org/route/v1/`
-                    }),
-                    showAlternatives: true,
-
-                    fitSelectedRoutes: false,
-
-                    show: false,
-
-                    routeWhileDragging: false,
-
-                    waypoints: [
-                        Leaflet.latLng(this.sA.lat,this.sA.lng),
-                        Leaflet.latLng(this.sD.lat,this.sD.lng)
-                    ],
-                }).addTo(this.map);
+                // this.getlatlgStations(this.selectedStationAct,this.selectedStationDest);
+                // if(this.routeControl){
+                //     console.log("it works");
+                //     this.map.removeControl(this.routeControl);
+                // }
+                // this.routeControl =  Leaflet.Routing.control({
+                //
+                //     router: Leaflet.Routing.osrmv1({
+                //         serviceUrl: `http://router.project-osrm.org/route/v1/`
+                //     }),
+                //     showAlternatives: true,
+                //
+                //     fitSelectedRoutes: false,
+                //
+                //     show: false,
+                //
+                //     routeWhileDragging: false,
+                //
+                //     waypoints: [
+                //         Leaflet.latLng(this.sA.lat,this.sA.lng),
+                //         Leaflet.latLng(this.sD.lat,this.sD.lng)
+                //     ],
+                // }).addTo(this.map);
             },err=>{
                 console.log(err);
             });
